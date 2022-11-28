@@ -1,0 +1,30 @@
+.inner-headings {
+  font-size: 2.1vw;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+.body-dark-blue {
+  background-color: #02072a;
+  color: #efe9e0;
+}
+
+.footer-blue {
+  background-color: #020625;
+}
+
+.progress-bar {
+  overflow: hidden;
+  width: 100%;
+  height: 8px;
+  border-radius: 8px;
+  transition: width 0.4s ease-in-out;
+  background-color: green;
+}
+
+.progress-bar__progress {
+  width: 40%;
+  border-radius: 8px;
+  background-color: red;
+}

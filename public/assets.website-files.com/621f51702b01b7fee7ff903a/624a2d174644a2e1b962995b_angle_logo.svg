@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 31.999999 32.000001"
+   xml:space="preserve"
+   width="32"
+   height="32">
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:#27363B;stroke:#27363B;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:#27363B;stroke:#27363B;stroke-miterlimit:10;}
+</style>
+<polygon
+   className="st0"
+   points="313.83,481.64 200.26,373.31 222.1,423.47 327.33,525.78 "
+   id="polygon4"
+   style="fill:#ffffff"
+   transform="matrix(0.06809062,0,0,0.06809062,-13.461118,-7.3185191)" />
+<polygon
+   className="st0"
+   points="552.82,478.85 432.81,368.5 435.99,421.01 545.73,523.21 "
+   id="polygon6"
+   style="fill:#ffffff"
+   transform="matrix(0.06809062,0,0,0.06809062,-13.461118,-7.3185191)" />
+<linearGradient
+   id="SVGID_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="199.2135"
+   y1="320.38779"
+   x2="666.14001"
+   y2="320.38779">
+	<stop
+   offset="0.099"
+   style="stop-color:#27363B"
+   id="stop8" />
+	<stop
+   offset="0.3091"
+   style="stop-color:#EB4960"
+   id="stop10" />
+	<stop
+   offset="0.5063"
+   style="stop-color:#F4837D"
+   id="stop12" />
+	<stop
+   offset="0.6881"
+   style="stop-color:#FCD5B4"
+   id="stop14" />
+	<stop
+   offset="0.9603"
+   style="stop-color:#99B998"
+   id="stop16" />
+</linearGradient>
+<polygon
+   className="st1"
+   points="431.78,159.14 666.14,365.6 552.82,478.85 432.81,368.5 313.83,481.64 199.21,370.91 "
+   id="polygon19"
+   style="fill:url(#SVGID_1_)"
+   transform="matrix(0.06809062,0,0,0.06809062,-13.461118,-7.3185191)" />
+<g
+   id="g51"
+   transform="matrix(0.06809062,0,0,0.06809062,-13.461118,-7.3185191)">
+	<line
+   className="st2"
+   x1="431.78"
+   y1="159.14"
+   x2="199.21001"
+   y2="370.91"
+   id="line21"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="666.14001"
+   y1="365.60001"
+   x2="431.78"
+   y2="159.14"
+   id="line23"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="313.82999"
+   y1="481.64001"
+   x2="432.81"
+   y2="368.25"
+   id="line25"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="432.81"
+   y1="368.25"
+   x2="552.82001"
+   y2="478.85001"
+   id="line27"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="552.82001"
+   y1="478.85001"
+   x2="666.14001"
+   y2="365.60001"
+   id="line29"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="199.21001"
+   y1="370.91"
+   x2="313.82999"
+   y2="481.64001"
+   id="line31"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="435.98999"
+   y1="421.01001"
+   x2="327.32999"
+   y2="525.78003"
+   id="line33"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="545.72998"
+   y1="523.21002"
+   x2="435.98999"
+   y2="421.01001"
+   id="line35"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="649.65997"
+   y1="418.54999"
+   x2="545.72998"
+   y2="523.21002"
+   id="line37"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="327.32999"
+   y1="525.78003"
+   x2="222.10001"
+   y2="423.47"
+   id="line39"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="199.21001"
+   y1="370.91"
+   x2="222.10001"
+   y2="423.47"
+   id="line41"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="649.65997"
+   y1="418.54999"
+   x2="666.14001"
+   y2="365.60001"
+   id="line43"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="432.81"
+   y1="368.25"
+   x2="435.98999"
+   y2="421.01001"
+   id="line45"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="313.82999"
+   y1="481.64001"
+   x2="327.32999"
+   y2="525.78003"
+   id="line47"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+	<line
+   className="st2"
+   x1="552.82001"
+   y1="478.85001"
+   x2="545.72998"
+   y2="523.21002"
+   id="line49"
+   style="fill:#27363b;stroke:#27363b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round" />
+</g>
+<polygon
+   className="st3"
+   points="432.81,368.25 313.83,481.64 327.33,525.78 435.99,421.01 "
+   id="polygon53"
+   style="fill:#27363b;stroke:#27363b;stroke-miterlimit:10"
+   transform="matrix(0.06809062,0,0,0.06809062,-13.461118,-7.3185191)" />
+<polygon
+   className="st3"
+   points="663.48,368.25 552.82,478.85 545.73,523.21 649.66,418.55 "
+   id="polygon55"
+   style="fill:#27363b;stroke:#27363b;stroke-miterlimit:10"
+   transform="matrix(0.06809062,0,0,0.06809062,-13.461118,-7.3185191)" />
+</svg>
