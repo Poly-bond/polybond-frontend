@@ -39,8 +39,12 @@ export default function Home() {
               className="navigation-bar w-nav"
             >
               <div className="nav__horizontal-container">
-                <a href="index.html" className="nav-logo">
-                  <img src="logo-white.svg" />
+                <a
+                  href="index.html"
+                  className="nav-logo text-3xl font-semibold font-mono"
+                >
+                  Bondii Pro
+                  {/* <img src="logo-white.svg" /> */}
                 </a>
                 <div className="nav__links-wrp">
                   <nav role="navigation" className="nav__menu w-nav-menu">
@@ -164,7 +168,8 @@ export default function Home() {
                         className="btn__horizontal-container"
                       >
                         <a
-                          href="https://pro.olympusdao.finance/"
+                          href="#"
+                          // href="https://pro.olympusdao.finance/"
                           rel="noreferrer noopener"
                           target="_blank"
                           className="btn-pr dark w-inline-block"
@@ -177,7 +182,8 @@ export default function Home() {
                           </div>
                         </a>
                         <a
-                          href="https://docs.olympusdao.finance/pro"
+                          href="#"
+                          // href="https://docs.olympusdao.finance/pro"
                           target="_blank"
                           rel="noreferrer noopener"
                           className="btn-pr alt dark w-inline-block"
@@ -249,7 +255,8 @@ export default function Home() {
                           <div className="pr-partners__grid">
                             <div id="w-node-d0c714ac-3ae4-776a-6ade-e1027615a28d-d3c7e579">
                               <a
-                                href="https://barnbridge.com/"
+                                href="#"
+                                // href="https://barnbridge.com/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -263,7 +270,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://www.pendle.finance/"
+                                href="#"
+                                // href="https://www.pendle.finance/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -277,7 +285,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://www.inverse.finance/"
+                                href="#"
+                                // href="https://www.inverse.finance/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -293,7 +302,8 @@ export default function Home() {
                             </div>
                             <div id="w-node-d0c714ac-3ae4-776a-6ade-e1027615a29a-d3c7e579">
                               <a
-                                href="https://alchemix.fi/"
+                                href="#"
+                                // href="https://alchemix.fi/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -307,7 +317,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://stakedao.org/"
+                                href="#"
+                                // href="https://stakedao.org/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -321,7 +332,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://pooltogether.com/"
+                                href="#"
+                                // href="https://pooltogether.com/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -337,7 +349,8 @@ export default function Home() {
                             </div>
                             <div id="w-node-d0c714ac-3ae4-776a-6ade-e1027615a2a7-d3c7e579">
                               <a
-                                href="https://floatprotocol.com/"
+                                href="#"
+                                // href="https://floatprotocol.com/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -351,7 +364,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://synapseprotocol.com/"
+                                href="#"
+                                // href="https://synapseprotocol.com/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -365,7 +379,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://www.liquiddriver.finance/"
+                                href="#"
+                                // href="https://www.liquiddriver.finance/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -381,7 +396,8 @@ export default function Home() {
                             </div>
                             <div id="w-node-d0c714ac-3ae4-776a-6ade-e1027615a2b4-d3c7e579">
                               <a
-                                href="https://frax.finance/"
+                                href="#"
+                                // href="https://frax.finance/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -395,7 +411,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://thorstarter.org/"
+                                href="#"
+                                // href="https://thorstarter.org/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -409,7 +426,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://spookyswap.finance/"
+                                href="#"
+                                // href="https://spookyswap.finance/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -429,7 +447,8 @@ export default function Home() {
                           <div className="pr-partners__grid">
                             <div id="w-node-a2f027d8-d0bf-4c90-c825-a2b540397c8b-d3c7e579">
                               <a
-                                href="https://scream.sh/"
+                                href="#"
+                                // href="https://scream.sh/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -443,7 +462,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://everipedia.org/"
+                                href="#"
+                                // href="https://everipedia.org/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -457,7 +477,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://shapeshift.com/"
+                                href="#"
+                                // href="https://shapeshift.com/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -473,7 +494,8 @@ export default function Home() {
                             </div>
                             <div id="w-node-a2f027d8-d0bf-4c90-c825-a2b540397c98-d3c7e579">
                               <a
-                                href="https://spiritswap.finance/"
+                                href="#"
+                                // href="https://spiritswap.finance/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -487,7 +509,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://mstable.org/"
+                                href="#"
+                                // href="https://mstable.org/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -501,7 +524,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://beets.fi/"
+                                href="#"
+                                // href="https://beets.fi/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -517,7 +541,8 @@ export default function Home() {
                             </div>
                             <div id="w-node-a2f027d8-d0bf-4c90-c825-a2b540397ca5-d3c7e579">
                               <a
-                                href="https://www.bankless.community/"
+                                href="#"
+                                // href="https://www.bankless.community/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -531,7 +556,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://www.gro.xyz/"
+                                href="#"
+                                // href="https://www.gro.xyz/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -545,7 +571,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://hundred.finance/"
+                                href="#"
+                                // href="https://hundred.finance/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -561,7 +588,8 @@ export default function Home() {
                             </div>
                             <div id="w-node-a2f027d8-d0bf-4c90-c825-a2b540397cb2-d3c7e579">
                               <a
-                                href="https://www.keeperdao.com/"
+                                href="#"
+                                // href="https://www.keeperdao.com/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -575,7 +603,8 @@ export default function Home() {
                                 />
                               </a>
                               <a
-                                href="https://www.angle.money/"
+                                href="#"
+                                // href="https://www.angle.money/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 className="pr-partners__link w-inline-block"
@@ -818,9 +847,9 @@ export default function Home() {
                         <div className="slide-in-3">
                           <p>
                             Bondii introduces the innovative bonding mechanism
-                            of Nahmii as a service for other protocols. Similar
-                            to bonding on Bondii, Bondii allows a user to
-                            exchange existing liquidity for the protocol’s
+                            of Bondii Pro as a service for other protocols.
+                            Similar to bonding on Bondii, Bondii allows a user
+                            to exchange existing liquidity for the protocol’s
                             native token at a discount. In exchange, the
                             protocol owns the liquidity instead of renting it,
                             which helps secure longevity and price stability for
@@ -981,7 +1010,8 @@ export default function Home() {
                     <div className="mar-bot-58">
                       <div className="slide-in">
                         <a
-                          href="https://pro.olympusdao.finance/#/bond"
+                          href="#"
+                          // href="https://pro.olympusdao.finance/#/bond"
                           target="_blank"
                           rel="noreferrer noopener"
                           className="btn-pr dark w-inline-block"
@@ -1012,7 +1042,7 @@ export default function Home() {
                 <div className="footer__container">
                   <div id="w-node-_53e45fb5-9d72-c442-cbd6-6edd3639f0df-3639f0d9">
                     <div className="mar-bot-58">
-                      <a
+                      {/* <a
                         href="index.html"
                         className="footer__brand w-inline-block"
                       >
@@ -1022,12 +1052,20 @@ export default function Home() {
                           alt="Olympus"
                           className="footer__brand-icon"
                         />
+                      </a> */}
+                      <a
+                        href="index.html"
+                        className="footer__brand w-inline-block text-2xl font-semibold font-mono"
+                      >
+                        Bondii Pro
+                        {/* <img src="logo-white.svg" /> */}
                       </a>
                     </div>
                     <div className="footer__social-links__wrp">
                       <a
                         id="w-node-_53e45fb5-9d72-c442-cbd6-6edd3639f0e4-3639f0d9"
-                        href="https://twitter.com/OlympusDAO"
+                        href="#"
+                        // href="https://twitter.com/OlympusDAO"
                         target="_blank"
                         rel="noreferrer noopener"
                         className="footer__social-link w-inline-block"
@@ -1041,7 +1079,8 @@ export default function Home() {
                       </a>
                       <a
                         id="w-node-_53e45fb5-9d72-c442-cbd6-6edd3639f0e6-3639f0d9"
-                        href="https://discord-invite.olympusdao.finance/"
+                        href="#"
+                        // href="https://discord-invite.olympusdao.finance/"
                         target="_blank"
                         rel="noreferrer noopener"
                         className="footer__social-link w-inline-block"
@@ -1055,7 +1094,8 @@ export default function Home() {
                       </a>
                       <a
                         id="w-node-_53e45fb5-9d72-c442-cbd6-6edd3639f0e8-3639f0d9"
-                        href="https://github.com/OlympusDAO"
+                        href="#"
+                        // href="https://github.com/OlympusDAO"
                         target="_blank"
                         rel="noreferrer noopener"
                         className="footer__social-link w-inline-block"
@@ -1069,7 +1109,8 @@ export default function Home() {
                       </a>
                       <a
                         id="w-node-_4f5f315c-1541-7af3-1da4-e762a6cd0d35-3639f0d9"
-                        href="https://www.instagram.com/olympusdao/"
+                        href="#"
+                        // href="https://www.instagram.com/olympusdao/"
                         target="_blank"
                         rel="noreferrer noopener"
                         className="footer__social-link w-inline-block"
@@ -1083,7 +1124,8 @@ export default function Home() {
                       </a>
                       <a
                         id="w-node-_53e45fb5-9d72-c442-cbd6-6edd3639f0ea-3639f0d9"
-                        href="https://t.me/OlympusTG"
+                        href="#"
+                        // href="https://t.me/OlympusTG"
                         target="_blank"
                         rel="noreferrer noopener"
                         className="footer__social-link w-inline-block"
@@ -1097,7 +1139,8 @@ export default function Home() {
                       </a>
                       <a
                         id="w-node-_53e45fb5-9d72-c442-cbd6-6edd3639f0ec-3639f0d9"
-                        href="https://youtube.com/c/olympusdao"
+                        href="#"
+                        // href="https://youtube.com/c/olympusdao"
                         target="_blank"
                         rel="noreferrer noopener"
                         className="footer__social-link w-inline-block"
@@ -1111,7 +1154,8 @@ export default function Home() {
                       </a>
                       <a
                         id="w-node-_53e45fb5-9d72-c442-cbd6-6edd3639f0ee-3639f0d9"
-                        href="https://www.reddit.com/r/olympusdao/"
+                        href="#"
+                        // href="https://www.reddit.com/r/olympusdao/"
                         target="_blank"
                         rel="noreferrer noopener"
                         className="footer__social-link w-inline-block"
@@ -1133,7 +1177,8 @@ export default function Home() {
                     <div>
                       <div className="mar-bot-32">
                         <a
-                          href="olympus-pro.html"
+                          href="#"
+                          // href="olympus-pro.html"
                           aria-current="page"
                           className="nav__link w--current"
                         >
@@ -1142,7 +1187,8 @@ export default function Home() {
                       </div>
                       <div className="mar-bot-32">
                         <a
-                          href="https://app.olympusdao.finance/#/stake"
+                          href="#"
+                          // href="https://app.olympusdao.finance/#/stake"
                           target="_blank"
                           rel="noreferrer noopener"
                           className="nav__link"
@@ -1152,7 +1198,8 @@ export default function Home() {
                       </div>
                       <div>
                         <a
-                          href="https://app.olympusdao.finance/#/bonds"
+                          href="#"
+                          // href="https://app.olympusdao.finance/#/bonds"
                           target="_blank"
                           rel="noreferrer noopener"
                           className="nav__link"
@@ -1163,14 +1210,15 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div id="w-node-_53e45fb5-9d72-c442-cbd6-6edd3639f0fe-3639f0d9">
+                  {/* <div id="w-node-_53e45fb5-9d72-c442-cbd6-6edd3639f0fe-3639f0d9">
                     <div className="mar-bot-32">
                       <h3 className="t-24">Learn</h3>
                     </div>
                     <div>
                       <div className="mar-bot-32">
                         <a
-                          href="https://docs.olympusdao.finance/main/"
+                          href="#"
+                          // href="https://docs.olympusdao.finance/main/"
                           target="_blank"
                           rel="noreferrer noopener"
                           className="nav__link"
@@ -1194,7 +1242,7 @@ export default function Home() {
                         </a>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div id="w-node-_53e45fb5-9d72-c442-cbd6-6edd3639f10c-3639f0d9">
                     <div className="mar-bot-32">
@@ -1203,17 +1251,19 @@ export default function Home() {
                     <div>
                       <div className="mar-bot-32">
                         <a
-                          href="https://discord-invite.olympusdao.finance/"
+                          href="#"
+                          // href="https://discord-invite.olympusdao.finance/"
                           target="_blank"
                           rel="noreferrer noopener"
                           className="nav__link"
                         >
-                          JOIN NAHMII DISCORD
+                          JOIN BONDII PRO DISCORD
                         </a>
                       </div>
                       <div>
                         <a
-                          href="mailto:press@olympusdao.finance"
+                          href="#"
+                          // href="mailto:press@olympusdao.finance"
                           className="nav__link"
                         >
                           Media inquiries
@@ -1300,7 +1350,8 @@ export default function Home() {
                     className="footer__form"
                   >
                     <a
-                      href="https://www.klimadao.finance/pledge/0xe06efa3d9ee6923240ee1195a16ddd96b5cce8f7"
+                      href="#"
+                      // href="https://www.klimadao.finance/pledge/0xe06efa3d9ee6923240ee1195a16ddd96b5cce8f7"
                       target="_blank"
                       rel="noreferrer noopener"
                       className="link-block w-inline-block"

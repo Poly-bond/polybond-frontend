@@ -19,8 +19,8 @@ const Navbar = () => {
             <Link href={"/"}>
               <div className='product__logo'>
               {/* <i className="ri-quill-pen-line"></i>  */}
-              <div> <img src="favicon-1.ico"width="30"/> </div> {" "}
-              <div> <p>Bondii</p> </div>
+              {/* <div> <img src="favicon-1.ico"width="30"/> </div> {" "} */}
+              <div> <p className='font-mono font-semibold'>Bondii Pro</p> </div>
               </div>
             </Link>
             <Link href="/market" className=''>

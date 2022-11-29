@@ -46,8 +46,8 @@ export default function Home() {
         <div className="flex justify-center font-mono flex-col items-center mt-16 text-grey_light">
           <div className="flex text-4xl">
             {/* <i className="ri-quill-pen-line"></i> {" "} */}
-            <img src="favicon-1.ico"width="40"/>
-            <p className="font-medium">Bondii</p>
+            {/* <img src="favicon-1.ico"width="40"/> */}
+            <p className="font-medium">Bondii Pro</p>
           </div>
 
           <p className="mt-2 text-2xl">
