@@ -6,9 +6,9 @@ export default function Home() {
     <>
       <Head>
         <meta charset="utf-8" />
-        <title>Bondii</title>
-        <meta content="Bondii" property="og:title" />
-        <meta content="Bondii" property="twitter:title" />
+        <title>PolyBond</title>
+        <meta content="PolyBond" property="og:title" />
+        <meta content="PolyBond" property="twitter:title" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link href="favicon-1.ico" rel="shortcut icon" type="image/x-icon" />
         <link href="png2.png" rel="apple-touch-icon" />
@@ -43,7 +43,7 @@ export default function Home() {
                   href="index.html"
                   className="nav-logo text-3xl font-semibold font-mono"
                 >
-                  Bondii Pro
+                  PolyBond
                   {/* <img src="logo-white.svg" /> */}
                 </a>
                 <div className="nav__links-wrp">
@@ -66,13 +66,13 @@ export default function Home() {
                       <a href="#" className="nav__link nav-bar__link">
                         Flex loans
                       </a>
-                      <a
+                      {/* <a
                         href="#"
                         aria-current="page"
                         className="nav__link nav-bar__link w--current"
                       >
                         Bondii Bond
-                      </a>
+                      </a> */}
                       <a
                         href="#"
                         target="_blank"
@@ -152,7 +152,7 @@ export default function Home() {
                               opacity: "1",
                             }}
                           >
-                            Introducing Bondii unique cross-chain bonding
+                            Introducing PolyBondunique cross-chain bonding
                             mechanism to other protocols as a service
                           </p>
                         </div>
@@ -232,7 +232,7 @@ export default function Home() {
                           lineHeight: "1.25",
                         }}
                       >
-                        Bondii Partners
+                        PolyBond Partners
                       </h2>
                     </div>
                   </div>
@@ -836,7 +836,7 @@ export default function Home() {
                               lineHeight: "1.25",
                             }}
                           >
-                            What is Bondii?
+                            What is PolyBond?
                           </h2>
                         </div>
                       </div>
@@ -846,9 +846,9 @@ export default function Home() {
                       >
                         <div className="slide-in-3">
                           <p>
-                            Bondii introduces the innovative bonding mechanism
-                            of Bondii Pro as a service for other protocols.
-                            Similar to bonding on Bondii, Bondii allows a user
+                            PolyBond introduces the innovative bonding mechanism
+                            of PolyBond as a service for other protocols.
+                            Similar to bonding on PolyBond, PolyBond allows a user
                             to exchange existing liquidity for the protocol’s
                             native token at a discount. In exchange, the
                             protocol owns the liquidity instead of renting it,
@@ -1057,7 +1057,7 @@ export default function Home() {
                         href="index.html"
                         className="footer__brand w-inline-block text-2xl font-semibold font-mono"
                       >
-                        Bondii Pro
+                        PolyBond
                         {/* <img src="logo-white.svg" /> */}
                       </a>
                     </div>
@@ -1182,7 +1182,7 @@ export default function Home() {
                           aria-current="page"
                           className="nav__link w--current"
                         >
-                          Bondii
+                          PolyBond
                         </a>
                       </div>
                       <div className="mar-bot-32">
@@ -1257,7 +1257,7 @@ export default function Home() {
                           rel="noreferrer noopener"
                           className="nav__link"
                         >
-                          JOIN BONDII PRO DISCORD
+                          JOIN POLYBOND DISCORD
                         </a>
                       </div>
                       <div>
@@ -1274,7 +1274,7 @@ export default function Home() {
 
                   <div id="w-node-c3dc0562-b736-e5a5-a6c3-1436e8917091-3639f0d9">
                     <div className="mar-bot-32">
-                      <h3 className="t-24">Bondii Monthly Digest</h3>
+                      <h3 className="t-24">PolyBond Monthly Digest</h3>
                     </div>
 
                     <div className="footer__form-block w-form">

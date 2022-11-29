@@ -47,7 +47,7 @@ export default function Home() {
           <div className="flex text-4xl">
             {/* <i className="ri-quill-pen-line"></i> {" "} */}
             {/* <img src="favicon-1.ico"width="40"/> */}
-            <p className="font-medium">Bondii Pro</p>
+            <p className="font-medium">PolyBond</p>
           </div>
 
           <p className="mt-2 text-2xl">

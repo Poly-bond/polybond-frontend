@@ -7,44 +7,29 @@ import { publicProvider } from "wagmi/providers/public";
 import 'rc-tooltip/assets/bootstrap.css';
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 
-const nahmiiChain = {
-  id: 5554,
-  name: 'Nahmii 3 testnet (Early)',
-  network: 'nahmii',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'Ethereum',
-    symbol: 'ETH',
-  },
-  rpcUrls: {
-    default: 'https://ngeth.n3g0.nahmii.net',
-  },
-  blockExplorers: {
-    default: { name: 'Nahmii Scan', url: 'https://explorer.n3g0.nahmii.net' },
-  },
-  testnet: false,
-}
+const alchemyId = process.env.POLYGON_ALCHEMY_ID;
 
-const { chains, provider } = configureChains(
-  [nahmiiChain],
+const { provider, chains } = configureChains(
+  [chain.polygonMumbai],
   [
     jsonRpcProvider({
       rpc: (chain) => ({
-        http: `https://ngeth.n3g0.nahmii.net`,
+        http: `https://polygon-mumbai.g.alchemy.com/v2/${alchemyId}`,
+        webSocket: `wss://polygon-mumbai.g.alchemy.com/v2/${alchemyId}`,
       }),
     }),
-  ],
+  ]
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "Nahmii Olympus Pro",
-  chains
+  appName: "PolyBond",
+  chains,
 });
 
 const wagmiClient = createClient({
   autoConnect: true,
   connectors,
-  provider
+  provider,
 });
 
 function MyApp({ Component, pageProps }) {
