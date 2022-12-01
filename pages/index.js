@@ -10,8 +10,8 @@ export default function Home() {
         <meta content="PolyBond" property="og:title" />
         <meta content="PolyBond" property="twitter:title" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link href="favicon-1.ico" rel="shortcut icon" type="image/x-icon" />
-        <link href="png2.png" rel="apple-touch-icon" />
+        <link href="icon.png" rel="shortcut icon" type="image/x-icon" />
+        <link href="icon.png" rel="apple-touch-icon" />
         {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script>
             <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
             
@@ -210,7 +210,7 @@ export default function Home() {
                           data-wf-ignore="true"
                           className="pro-hero__bg-video w-background-video w-background-video-atom"
                         >
-                          <img className="content-cover" src="cta-bg.png" />
+                          <img className="content-cover" src="polygon.avif" />
                         </div>
                       </div>
                     </div>
@@ -924,7 +924,7 @@ export default function Home() {
                     </div>
 
                     <img
-                      src="nahim tentacles png.png"
+                      src="polybond.png"
                       loading="lazy"
                       id="w-node-_2ff62803-3fbf-d238-ab81-4be2465db5cc-d3c7e579"
                       alt=""
