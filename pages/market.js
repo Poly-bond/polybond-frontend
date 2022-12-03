@@ -97,7 +97,7 @@ export default function Home() {
       <Layout className={""}>
         {openPurchase && (
           <PurchaseModal
-            createBond={createBond}
+            depositBond={createBond}
             setOpenPurchase={setOpenPurchase}
           />
         )}

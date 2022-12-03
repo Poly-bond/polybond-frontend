@@ -4,12 +4,12 @@ import { toast } from "react-toastify";
 import { useAccount, useContractWrite, useWaitForTransaction } from "wagmi";
 import { CUSTOM_BOND_ABI, TOKEN_ABI } from "../config";
 
-export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
+export const PurchaseModal = ({ setOpenPurchase, depositBondInfo }) => {
   const { address } = useAccount();
   const [amount, setAmount] = useState("");
-  const bondAddress = createBond?._bondAddress;
+  const bondAddress = depositBondInfo?._bondAddress;
 
-  console.log(createBond);
+  console.log(depositBondInfo);
 
   const {
     data: approveData,
@@ -18,16 +18,16 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
     isError: approveERC20Error,
   } = useContractWrite({
     mode: "recklesslyUnprepared",
-    addressOrName: createBond?._principalToken?.address,
+    addressOrName: depositBondInfo?._principalToken?.address,
     contractInterface: TOKEN_ABI.abi,
     functionName: "approve",
     args: [bondAddress, ethers.utils.parseEther(amount || "0")],
   });
 
   const {
-    data: createBondData,
-    isError: createBondError,
-    isLoading: createBondLoading,
+    data: depositBondData,
+    isError: depositBondError,
+    isLoading: depositBondLoading,
     write: depositBond,
     writeAsync,
   } = useContractWrite({
@@ -38,7 +38,7 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
     args: [
       ethers.utils.parseEther(amount || "0"),
       address,
-      createBond?._principalToken?.address,
+      depositBondInfo?._principalToken?.address,
     ],
   });
 
@@ -53,9 +53,9 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
       },
     });
 
-  const { isError: createBondWaitError, isLoading: createBondWaitLoading } =
+  const { isError: depositBondWaitError, isLoading: depositBondWaitLoading } =
     useWaitForTransaction({
-      hash: createBondData?.hash,
+      hash: depositBondData?.hash,
       onSuccess(data) {
         toast.success("Successful!");
         setOpenPurchase(false);
@@ -82,7 +82,7 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
           </button>
 
           <p className="the__modal__item__header__title">
-            {createBond?._principalToken?.name} Bond
+            {depositBondInfo?._principalToken?.name} Bond
           </p>
 
           <div className="the__plain"></div>
@@ -103,7 +103,7 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
         <div className="the__modal__details">
           <div className="the__modal__details__pair">
             <div className="the__modal__details__pair__item">
-              {createBond?._principalToken?.name}
+              {depositBondInfo?._principalToken?.name}
             </div>
             <div className="the__modal__details__pair__text">
               <span>You Provide</span>
@@ -121,7 +121,7 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
 
           <div className="the__modal__details__percent">
             <div className="the__modal__details__percent__item">
-              {createBond?._discount}
+              {depositBondInfo?._discount}
             </div>
             <div className="the__modal__details__percent__text">
               <span>You would receive</span>
@@ -141,8 +141,15 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
             <button>MAX</button>
           </div>
           <div className="the__modal__input__cta">
-            <button disabled={amount < "1"} onClick={handleBond}>Bond</button>
-            <button onClick={handleBondAndStake} className="ml-3">
+            <button disabled={amount < "1"} onClick={handleBond}>
+              {approveLoading ||
+              depositBondLoading ||
+              approvalLoading ||
+              depositBondWaitLoading
+                ? "Bonding"
+                : "Bond"}
+            </button>
+            <button disabled onClick={handleBondAndStake} className="ml-3">
               Bond &amp; Stake
             </button>
           </div>
