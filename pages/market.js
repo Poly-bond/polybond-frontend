@@ -61,7 +61,6 @@ export default function Home() {
     contracts: bondArray,
   });
 
-
   const {
     data: claimData,
     isLoading: claimLoading,

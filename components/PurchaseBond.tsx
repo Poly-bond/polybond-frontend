@@ -7,7 +7,9 @@ import { CUSTOM_BOND_ABI, TOKEN_ABI } from "../config";
 export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
   const { address } = useAccount();
   const [amount, setAmount] = useState("");
-  const bondAddress = createBond.bondAddress;
+  const bondAddress = createBond?._bondAddress;
+
+  console.log(createBond);
 
   const {
     data: approveData,
@@ -16,10 +18,10 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
     isError: approveERC20Error,
   } = useContractWrite({
     mode: "recklesslyUnprepared",
-    addressOrName: createBond.principalToken,
+    addressOrName: createBond?._principalToken?.address,
     contractInterface: TOKEN_ABI.abi,
     functionName: "approve",
-    args: [bondAddress, ethers.utils.parseEther("10")],
+    args: [bondAddress, ethers.utils.parseEther(amount || "0")],
   });
 
   const {
@@ -33,7 +35,11 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
     addressOrName: bondAddress,
     contractInterface: CUSTOM_BOND_ABI.abi,
     functionName: "deposit",
-    args: [ethers.utils.parseEther("9.5"), address, createBond.principalToken],
+    args: [
+      ethers.utils.parseEther(amount || "0"),
+      address,
+      createBond?._principalToken?.address,
+    ],
   });
 
   const { isError: approvalError, isLoading: approvalLoading } =
@@ -52,6 +58,7 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
       hash: createBondData?.hash,
       onSuccess(data) {
         toast.success("Successful!");
+        setOpenPurchase(false);
       },
       onError(error) {
         toast.error("Encountered Error!");
@@ -74,7 +81,9 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
             <i className="ri-close-line"></i>
           </button>
 
-          <p className="the__modal__item__header__title">UNI-ETH SLP Bond</p>
+          <p className="the__modal__item__header__title">
+            {createBond?._principalToken?.name} Bond
+          </p>
 
           <div className="the__plain"></div>
         </div>
@@ -123,6 +132,7 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
         <div className="the__modal__input">
           <div className="the__modal__input__item">
             <input
+              required
               type="text"
               name="amount"
               onChange={(e) => setAmount(e.target.value)}
@@ -131,7 +141,7 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
             <button>MAX</button>
           </div>
           <div className="the__modal__input__cta">
-            <button onClick={handleBond}>Bond</button>
+            <button disabled={amount < "1"} onClick={handleBond}>Bond</button>
             <button onClick={handleBondAndStake} className="ml-3">
               Bond &amp; Stake
             </button>
