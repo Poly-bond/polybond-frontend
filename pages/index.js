@@ -39,10 +39,12 @@ export default function Home() {
               className="navigation-bar w-nav"
             >
               <div className="nav__horizontal-container">
+              
                 <a
                   href="index.html"
                   className="nav-logo text-3xl font-semibold font-mono"
                 >
+                <img src="icon.png"/>
                   PolyBond
                   {/* <img src="logo-white.svg" /> */}
                 </a>
