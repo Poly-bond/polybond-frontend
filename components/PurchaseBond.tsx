@@ -134,7 +134,7 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
           <div className="the__modal__input__item">
             <input
               required
-              type="text"
+              type="number"
               name="amount"
               onChange={(e) => setAmount(e.target.value)}
               placeholder="Amount of UNI/ETH SLP token"
