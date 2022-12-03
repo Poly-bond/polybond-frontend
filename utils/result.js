@@ -1,67 +1,67 @@
 export const resultArray = [
   {
     _payoutToken: {
-      address: "0xFdc78DA8Bbd584C6f6E14468c77b6f09105CA63f",
+      address: "0xD90bE8d98f56b8B6B1Cc22f42bc990290032bC49",
       name: "Kiwii Labs",
       symbol: "KLABS"
     },
     _principalToken: {
-      address: "0xaDBA987955Eac146f1983062100046be46e632fA",
-      name: "Kiwii Labs NLP",
-      symbol: "KLABS-ETH NLP"
+      address: "0x0eE5D566BF57e8449809dc32D4B92BB2575b5848",
+      name: "Kiwii Labs SLP",
+      symbol: "KLABS-ETH SLP"
 
     },
-    _treasuryAddress: "0xF1eEeA46e6027CF0FF59c988b0616Ae48a752f39",
-    _bondAddress: "0xb33a2C955ac21d73Eaa8805E1A8dd1D8c6248992",
-    _stakingAddress: "0x02740D899c2633Ce587798a69E060dBCAB5c9437",
+    _treasuryAddress: "0x38a5e8ce331b7873dbbf6eaa9cb0fba8f42dde81",
+    _bondAddress: "0xb1a10c237c3e58bca1a364b29c490d0841878d4d",
+    _stakingAddress: "0xbbfa99890ccb095cc6e9cc8e5416d0613a5a4905",
     _discount: "8.0%"
   },
   {
     _payoutToken: {
-      address: "0xaDBA987955Eac146f1983062100046be46e632fA",
+      address: "0x7DC7a2e041e1a03E1A378AEC5FFAC25D6C3E0795",
       name: "Kiwii",
       symbol: "KIWII"
     },
     _principalToken: {
-      address: "0xE9d590484Cf0e68FF30bb5589658CD9B6cEd096f",
-      name: "Kiwii NLP",
-      symbol: "KIWII-ETH NLP"
+      address: "0x86f515845c3451742d1dB85B77Fd53f83fA1D393",
+      name: "Kiwii SLP",
+      symbol: "KIWII-ETH SLP"
     },
-    _treasuryAddress: "0xf18067098a2a67E0A1a652799cA02fDB3DFfA8d4",
-    _bondAddress: "0x8F65E5E451dFA2c6444DbE3D46418656D0699bcB",
-    _stakingAddress: "0x01C4e6dE1122F772D75504cE9De492A3bD1338bE",
+    _treasuryAddress: "0xce44ffe1d38c09e99b4aa01e5a1f0fa5d6088be2",
+    _bondAddress: "0x753a05f136797819715fc3063aaedafff5ecc74f",
+    _stakingAddress: "0x29bef2d783cd8dc0c9f5309b0600af7507e291b6",
     _discount: "8.3%"
   },
   {
     _payoutToken: {
-      address: "0xaDBA987955Eac146f1983062100046be46e632fA",
+      address: "0x5FB8d67252bA547C11edafFF83721C776108e2f9",
       name: "Bondii",
       symbol: "BDI"
     },
     _principalToken: {
-      address: "0x1d4657f5dD44ff59E14973862e0749978B74A7c0",
-      name: "Bondii NLP",
-      symbol: "BDI-ETH NLP"
+      address: "0x5E15fAD1aFf0FF891d5165E27c19e974F660F600",
+      name: "Bondii SLP",
+      symbol: "BDI-ETH SLP"
     },
-    _treasuryAddress: "0x62F819DF23e8623291413A27f049bD47eB9624fF",
-    _bondAddress: "0x9BE1bF1AbC52c35d83F35b107A562F23faB615E1",
-    _stakingAddress: "0xd2967d305A77fEA3296D5fa8462aC37D42468182",
+    _treasuryAddress: "0xd77a4913d4d74791309b27348dfdbf8b015dd67b",
+    _bondAddress: "0x8ba8ba5662a85b429bab961de4994aad74dd885b",
+    _stakingAddress: "0x0eff6af9c9f527a4270ddd50da83ff56cd998033",
     _discount: "6.2%"
   },
   {
     _payoutToken: {
-      address: "0xaDBA987955Eac146f1983062100046be46e632fA",
+      address: "0xDd06e25CD5Ef89d744Bc8c0A723688ddbb00aDE7",
       name: "Farmii",
       symbol: "FMI"
     },
     _principalToken: {
-      address: "0x5C8f5D80FD653a885832dF5c1f09978C81A8cDC4",
-      name: "Farmii NLP",
-      symbol: "FMI-ETH NLP"
+      address: "0x8Af5405ab3C84E7aE6928f4848739E2950D0cD05",
+      name: "Farmii SLP",
+      symbol: "FMI-ETH SLP"
     },
-    _treasuryAddress: "0x309989Ef3310f81837Ef5492B3961A4CB48fd03f",
-    _bondAddress: "0x36a88435207f0D6fbdfd87821726202B7E166C50",
-    _stakingAddress: "0x6332d22755269F1104696154dDD02A2A5b5B9D85",
+    _treasuryAddress: "0x75ea8bf6780d6e0309a1ea9e55da246dce3c23ea",
+    _bondAddress: "0x71e302878b2714c2f9b64a70001aa6835629dd33",
+    _stakingAddress: "0x3f22408727a79e9f4257aa16be635595c4b507df",
     _discount: "5.9%"
   },
 ];

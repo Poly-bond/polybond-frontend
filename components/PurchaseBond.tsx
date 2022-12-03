@@ -14,7 +14,12 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
     isLoading,
   } = useContractFactoryStorageRead("fetchBondDetails");
 
+  console.log(address);
+  
   const bondAddress = createBond.bondAddress;
+  console.log(bondAddress);  
+  console.log(createBond.bondAddress);  
+  console.log(createBond);  
   
   // approves ERC20 TOKEN TO DEPOSIT
   const { data: approveData, write: approveERC20Token, isLoading: approveLoading, isError: approveERC20Error } = useContractWrite({
@@ -24,32 +29,34 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
     functionName: 'approve',
     args: [bondAddress, ethers.utils.parseEther("1")],
   });
-
-  // call DEPOSIT erc20 token function after apporve function is successful
-  const { isError: approvalError, isLoading: approvalLoading } = useWaitForTransaction({
-    hash: approveData?.hash,
-    onSuccess(data) {
-      depositBond();
-      console.log("IT WORKED!!!", data);
-    },
-    onError(error) {
-      console.log("Encountered Error!");
-    },
-  })
-
+  
   const { data, isError: createBondError, isLoading: createBondLoading, write: depositBond, writeAsync } =
     useContractWrite({
         mode: 'recklesslyUnprepared',
         addressOrName: bondAddress,
         contractInterface: CUSTOM_BOND_ABI.abi,
         functionName: "deposit",
-        args: [ethers.utils.parseEther("0.1"), 10000000, address]
+        args: [ethers.utils.parseEther("0.95"), address, createBond.principalToken]
     });
 
+  // call DEPOSIT erc20 token function after apporve function is successful
+  const { isError: approvalError, isLoading: approvalLoading } = useWaitForTransaction({
+    hash: approveData?.hash,
+    onSuccess(data) {
+      depositBond?.();
+      console.log("IT WORKEDDDDDDDDDDDDD!!!", data);
+    },
+    onError(error) {
+      console.log("Encountered Error!");
+    },
+  })
+
+
     const handleBond = () => {
-        approveERC20Token();
-        
-    }  
+      approveERC20Token();
+      // depositBond()
+    }
+
      const handleBondAndStake = () => {
         console.log("OKAYYYYYY");
         
@@ -118,7 +125,7 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
           </div>
           <div className="the__modal__input__cta">
             <button onClick={handleBond}>Bond</button>
-            <button onClick={handleBondAndStake} className="ml-3">Bond &amps; Stake</button>
+            <button onClick={handleBondAndStake} className="ml-3">Bond &amp; Stake</button>
           </div>
         </div>
       </div>

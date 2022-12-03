@@ -14,8 +14,8 @@ const { provider, chains } = configureChains(
   [
     jsonRpcProvider({
       rpc: (chain) => ({
-        http: `https://polygon-mumbai.g.alchemy.com/v2/${alchemyId}`,
-        webSocket: `wss://polygon-mumbai.g.alchemy.com/v2/${alchemyId}`,
+        http: `https://polygon-mumbai.g.alchemy.com/v2/x0ZzMscIDWG7MBSytHxYPqp6sF2jFBBe`,
+        webSocket: `wss://polygon-mumbai.g.alchemy.com/v2/x0ZzMscIDWG7MBSytHxYPqp6sF2jFBBe`,
       }),
     }),
   ]

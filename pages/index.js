@@ -39,13 +39,15 @@ export default function Home() {
               className="navigation-bar w-nav"
             >
               <div className="nav__horizontal-container">
+                <div>
+                  <img src="icon.png" className={{"background": "red"}} />
                 <a
                   href="index.html"
                   className="nav-logo text-3xl font-semibold font-mono"
                 >
                   PolyBond
-                  {/* <img src="logo-white.svg" /> */}
                 </a>
+                </div>
                 <div className="nav__links-wrp">
                   <nav role="navigation" className="nav__menu w-nav-menu">
                     <div className="nav__menu__container">
@@ -152,7 +154,7 @@ export default function Home() {
                               opacity: "1",
                             }}
                           >
-                            Introducing PolyBondunique cross-chain bonding
+                            Introducing PolyBond unique cross-chain bonding
                             mechanism to other protocols as a service
                           </p>
                         </div>
@@ -1057,8 +1059,8 @@ export default function Home() {
                         href="index.html"
                         className="footer__brand w-inline-block text-2xl font-semibold font-mono"
                       >
+                        <img src="icon.svg" />
                         PolyBond
-                        {/* <img src="logo-white.svg" /> */}
                       </a>
                     </div>
                     <div className="footer__social-links__wrp">
