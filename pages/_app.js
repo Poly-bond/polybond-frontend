@@ -1,11 +1,17 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
 import "@rainbow-me/rainbowkit/styles.css";
-import { getDefaultWallets, RainbowKitProvider, midnightTheme } from "@rainbow-me/rainbowkit";
+import {
+  getDefaultWallets,
+  RainbowKitProvider,
+  midnightTheme,
+} from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
-import 'rc-tooltip/assets/bootstrap.css';
-import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
+import "rc-tooltip/assets/bootstrap.css";
+import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const alchemyId = process.env.POLYGON_ALCHEMY_ID;
 
@@ -36,10 +42,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains} theme={midnightTheme()}>
+        <ToastContainer />
         <Component {...pageProps} />
       </RainbowKitProvider>
     </WagmiConfig>
-  )
+  );
 }
 
 export default MyApp;

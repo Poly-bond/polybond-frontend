@@ -11,9 +11,9 @@ export const resultArray = [
       symbol: "KLABS-ETH SLP"
 
     },
-    _treasuryAddress: "0x38a5e8ce331b7873dbbf6eaa9cb0fba8f42dde81",
-    _bondAddress: "0xb1a10c237c3e58bca1a364b29c490d0841878d4d",
-    _stakingAddress: "0xbbfa99890ccb095cc6e9cc8e5416d0613a5a4905",
+    _treasuryAddress: "0x01b5ae984ea55345aeae4023dfd1fd7b2192acd0",
+    _bondAddress: "0x4dda2a30c977ca2620311fd1f79ef7075f666cf9",
+    _stakingAddress: "0x39dadeea15e43fa6fe961f1f2b233f66de80ca2a",
     _discount: "8.0%"
   },
   {
@@ -27,9 +27,9 @@ export const resultArray = [
       name: "Kiwii SLP",
       symbol: "KIWII-ETH SLP"
     },
-    _treasuryAddress: "0xce44ffe1d38c09e99b4aa01e5a1f0fa5d6088be2",
-    _bondAddress: "0x753a05f136797819715fc3063aaedafff5ecc74f",
-    _stakingAddress: "0x29bef2d783cd8dc0c9f5309b0600af7507e291b6",
+    _treasuryAddress: "0x63ca9fb2f99da854a4296539708c76cf09ba310d",
+    _bondAddress: "0x48344c64265853c250ba1342682bea2d0d0a8284",
+    _stakingAddress: "0xad117c0beb0e8a1af6e278f921a7bcda5f8bb88b",
     _discount: "8.3%"
   },
   {
@@ -43,9 +43,9 @@ export const resultArray = [
       name: "Bondii SLP",
       symbol: "BDI-ETH SLP"
     },
-    _treasuryAddress: "0xd77a4913d4d74791309b27348dfdbf8b015dd67b",
-    _bondAddress: "0x8ba8ba5662a85b429bab961de4994aad74dd885b",
-    _stakingAddress: "0x0eff6af9c9f527a4270ddd50da83ff56cd998033",
+    _treasuryAddress: "0xa72652da12ff644539bb66b83d3b2b5cadd17503",
+    _bondAddress: "0x707f6894782cc32fefb22ad583a1665e5434e77f",
+    _stakingAddress: "0x8e22125b971d42b92b63d70e82f6513a9026993c",
     _discount: "6.2%"
   },
   {
@@ -59,9 +59,9 @@ export const resultArray = [
       name: "Farmii SLP",
       symbol: "FMI-ETH SLP"
     },
-    _treasuryAddress: "0x75ea8bf6780d6e0309a1ea9e55da246dce3c23ea",
-    _bondAddress: "0x71e302878b2714c2f9b64a70001aa6835629dd33",
-    _stakingAddress: "0x3f22408727a79e9f4257aa16be635595c4b507df",
+    _treasuryAddress: "0x19f3a1bc9b5d0a4a244067dac8d1ac8cbd9b82a2",
+    _bondAddress: "0x259ca7662afd95c83bfc91c3b1620be754a2fb33",
+    _stakingAddress: "0x3a7ffa49a5ce71edb78f4d6980eeea0b0b2a89fa",
     _discount: "5.9%"
   },
 ];

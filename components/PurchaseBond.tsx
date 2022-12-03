@@ -1,67 +1,70 @@
 import { ethers } from "ethers";
 import { useState } from "react";
-import { useAccount, useContractWrite, usePrepareContractWrite, useWaitForTransaction } from "wagmi";
+import { toast } from "react-toastify";
+import { useAccount, useContractWrite, useWaitForTransaction } from "wagmi";
 import { CUSTOM_BOND_ABI, TOKEN_ABI } from "../config";
-import { useContractFactoryStorageRead } from "../hooks/usePiggyFactoryRead";
 
 export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
-    const {address} = useAccount()
-    const [amount, setAmount] = useState("");
+  const { address } = useAccount();
+  const [amount, setAmount] = useState("");
+  const bondAddress = createBond.bondAddress;
 
   const {
-    data: bondDetails,
-    isError,
-    isLoading,
-  } = useContractFactoryStorageRead("fetchBondDetails");
-
-  console.log(address);
-  
-  const bondAddress = createBond.bondAddress;
-  console.log(bondAddress);  
-  console.log(createBond.bondAddress);  
-  console.log(createBond);  
-  
-  // approves ERC20 TOKEN TO DEPOSIT
-  const { data: approveData, write: approveERC20Token, isLoading: approveLoading, isError: approveERC20Error } = useContractWrite({
-    mode: 'recklesslyUnprepared',
+    data: approveData,
+    write: approveERC20Token,
+    isLoading: approveLoading,
+    isError: approveERC20Error,
+  } = useContractWrite({
+    mode: "recklesslyUnprepared",
     addressOrName: createBond.principalToken,
     contractInterface: TOKEN_ABI.abi,
-    functionName: 'approve',
-    args: [bondAddress, ethers.utils.parseEther("1")],
+    functionName: "approve",
+    args: [bondAddress, ethers.utils.parseEther("10")],
   });
-  
-  const { data, isError: createBondError, isLoading: createBondLoading, write: depositBond, writeAsync } =
-    useContractWrite({
-        mode: 'recklesslyUnprepared',
-        addressOrName: bondAddress,
-        contractInterface: CUSTOM_BOND_ABI.abi,
-        functionName: "deposit",
-        args: [ethers.utils.parseEther("0.95"), address, createBond.principalToken]
+
+  const {
+    data: createBondData,
+    isError: createBondError,
+    isLoading: createBondLoading,
+    write: depositBond,
+    writeAsync,
+  } = useContractWrite({
+    mode: "recklesslyUnprepared",
+    addressOrName: bondAddress,
+    contractInterface: CUSTOM_BOND_ABI.abi,
+    functionName: "deposit",
+    args: [ethers.utils.parseEther("9.5"), address, createBond.principalToken],
+  });
+
+  const { isError: approvalError, isLoading: approvalLoading } =
+    useWaitForTransaction({
+      hash: approveData?.hash,
+      onSuccess(data) {
+        depositBond?.();
+      },
+      onError(error) {
+        toast.error("Encountered Error!");
+      },
     });
 
-  // call DEPOSIT erc20 token function after apporve function is successful
-  const { isError: approvalError, isLoading: approvalLoading } = useWaitForTransaction({
-    hash: approveData?.hash,
-    onSuccess(data) {
-      depositBond?.();
-      console.log("IT WORKEDDDDDDDDDDDDD!!!", data);
-    },
-    onError(error) {
-      console.log("Encountered Error!");
-    },
-  })
+  const { isError: createBondWaitError, isLoading: createBondWaitLoading } =
+    useWaitForTransaction({
+      hash: createBondData?.hash,
+      onSuccess(data) {
+        toast.success("Successful!");
+      },
+      onError(error) {
+        toast.error("Encountered Error!");
+      },
+    });
 
+  const handleBond = () => {
+    approveERC20Token();
+  };
 
-    const handleBond = () => {
-      approveERC20Token();
-      // depositBond()
-    }
-
-     const handleBondAndStake = () => {
-        console.log("OKAYYYYYY");
-        
-    }
-    
+  const handleBondAndStake = () => {
+    console.log("OKAYYYYYY");
+  };
 
   return (
     <div className="the__modal__wrapper">
@@ -87,12 +90,11 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
             <h2>$0.534</h2>
           </div>
         </div>
-        {/* <div className="text-white">{JSON.stringify(createBond)}JJJJJJJ</div> */}
 
         <div className="the__modal__details">
           <div className="the__modal__details__pair">
             <div className="the__modal__details__pair__item">
-              <span>UNI</span>/<span>ETH</span>
+              {createBond?._principalToken?.name}
             </div>
             <div className="the__modal__details__pair__text">
               <span>You Provide</span>
@@ -110,7 +112,7 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
 
           <div className="the__modal__details__percent">
             <div className="the__modal__details__percent__item">
-              <span>8.07%</span>
+              {createBond?._discount}
             </div>
             <div className="the__modal__details__percent__text">
               <span>You would receive</span>
@@ -120,12 +122,19 @@ export const PurchaseModal = ({ setOpenPurchase, createBond }) => {
 
         <div className="the__modal__input">
           <div className="the__modal__input__item">
-            <input type="text" onChange={(e) => setAmount(e.target.value)} placeholder="Amount of UNI/ETH SLP token" />
+            <input
+              type="text"
+              name="amount"
+              onChange={(e) => setAmount(e.target.value)}
+              placeholder="Amount of UNI/ETH SLP token"
+            />
             <button>MAX</button>
           </div>
           <div className="the__modal__input__cta">
             <button onClick={handleBond}>Bond</button>
-            <button onClick={handleBondAndStake} className="ml-3">Bond &amp; Stake</button>
+            <button onClick={handleBondAndStake} className="ml-3">
+              Bond &amp; Stake
+            </button>
           </div>
         </div>
       </div>
