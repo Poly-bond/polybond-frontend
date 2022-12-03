@@ -39,14 +39,14 @@ export default function Home() {
               className="navigation-bar w-nav"
             >
               <div className="nav__horizontal-container">
-                <div>
-                  <img src="icon.png" className={{"background": "red"}} />
-                <a
-                  href="index.html"
-                  className="nav-logo text-3xl font-semibold font-mono"
-                >
-                  PolyBond
-                </a>
+                <div className="flex items-center">
+                  <img src="icon.png" width={"15%"} className="mr-2" />
+                  <a
+                    href="index.html"
+                    className="nav-logo text-3xl font-semibold font-mono"
+                  >
+                    PolyBond
+                  </a>
                 </div>
                 <div className="nav__links-wrp">
                   <nav role="navigation" className="nav__menu w-nav-menu">
@@ -850,12 +850,12 @@ export default function Home() {
                           <p>
                             PolyBond introduces the innovative bonding mechanism
                             of PolyBond as a service for other protocols.
-                            Similar to bonding on PolyBond, PolyBond allows a user
-                            to exchange existing liquidity for the protocol’s
-                            native token at a discount. In exchange, the
-                            protocol owns the liquidity instead of renting it,
-                            which helps secure longevity and price stability for
-                            everyone involved.
+                            Similar to bonding on PolyBond, PolyBond allows a
+                            user to exchange existing liquidity for the
+                            protocol’s native token at a discount. In exchange,
+                            the protocol owns the liquidity instead of renting
+                            it, which helps secure longevity and price stability
+                            for everyone involved.
                           </p>
                         </div>
                       </div>
