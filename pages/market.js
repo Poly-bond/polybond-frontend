@@ -155,7 +155,7 @@ export default function Home() {
                           <div className="flex">
                             <div className="mr-3 text-xl">
                               {ethers.utils
-                                .formatUnits(bondInfo[i]?.payout?._hex, 18)
+                                .formatUnits(bondInfo[i] ? bondInfo[i]?.payout: 0, 18)
                                 .substring(0, 4)}
                             </div>
                           </div>
