@@ -154,9 +154,9 @@ export default function Home() {
                         <div className="col-span-3">
                           <div className="flex">
                             <div className="mr-3 text-xl">
-                              {ethers.utils
+                              {/* {ethers.utils
                                 .formatUnits(bondInfo[i] ? bondInfo[i]?.payout: 0, 18)
-                                .substring(0, 4)}
+                                .substring(0, 4)} */} 0.0
                             </div>
                           </div>
                         </div>
