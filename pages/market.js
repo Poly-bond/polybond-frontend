@@ -125,17 +125,17 @@ export default function Home() {
                 <div className="col-span-2 flex items-center">Vesting Time</div>
                 <div className="col-span-2"></div>
               </div>
-
+              {console.log(fetchBondInfo, "fetch")}
               {fetchBondInfo?.map((bondInfo, i) => {
                 const principalTokenResult =
-                  address &&
+                  address && bondInfo.length > 0 && 
                   resultArray.find(
                     (bond, i) =>
                       bond._principalToken.address ==
-                      bondInfo[i]?.principalToken
-                  );
+                      bondInfo[0]?.principalToken
+                  ); 
 
-                console.log(principalTokenResult?._bondAddress);
+                console.log(principalTokenResult, "rrr")
 
                 return (
                   <div
@@ -154,10 +154,11 @@ export default function Home() {
                         <div className="col-span-3">
                           <div className="flex">
                             <div className="mr-3 text-xl">
-                              {/* {ethers.utils
-                                .formatUnits(bondInfo[i] ? bondInfo[i]?.payout: 0, 18)
-                                .substring(0, 4)} */} 0.0
+                             {ethers.utils
+                                .formatUnits(bondInfo[0] ? bondInfo[0]?.payout: 4, 18)
+                                .substring(0, 4)}
                             </div>
+                            <>{console.log( bondInfo[0]?.payout, "------")}</>
                           </div>
                         </div>
                         <div className="col-span-2 flex items-center">
@@ -172,9 +173,7 @@ export default function Home() {
                           <div
                             className="border cursor-pointer border-pink inline-block w-9/12 py-1 rounded-md text-center hover:bg-pink font-semibold"
                             onClick={() => {
-                              setPrincipalToken(bondInfo[i]?.principalToken);
-
-                              console.log(principalTokenResult?._bondAddress);
+                              setPrincipalToken(bondInfo[0]?.principalToken);
                               setUniqueBondAddress(
                                 principalTokenResult?._bondAddress
                               );
